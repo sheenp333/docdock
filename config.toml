@@ -1,5 +1,5 @@
 languageCode = "en-us"
-baseURL = "http://sheenp333.github.io/hugo/"
+baseURL = "http://sheenp333.github.io/docdock/"
 DefaultContentLanguage = "en"
 title = "CompInfo"
 theme = "docdock"
