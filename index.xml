@@ -107,6 +107,15 @@ Special syntax (in html comment) is available for adding attributes to Markdown 
     </item>
     
     <item>
+      <title>Preconditions, Project Lombok, JSR 303 and JSR 308</title>
+      <link>http://sheenp333.github.io/hugo/post/example/</link>
+      <pubDate>Wed, 14 Dec 2016 12:33:44 +0100</pubDate>
+      
+      <guid>http://sheenp333.github.io/hugo/post/example/</guid>
+      <description>skinparam handwritten true skinparam monochrome true Alice -&amp;gt; Bob: Authentication Request Bob --&amp;gt; Alice: Authentication Response Alice -&amp;gt; Bob: Another authentication Request Alice &amp;lt;-- Bob: another authentication Response    +-------------+ | Asciidoctor |-------+ | Diagram | | +-------------+ | PNG out ^ | | ditaa in | | v +--------+ +--------+----+ /----------------\ | | --+ Asciidoctor +--&amp;gt; | | | Text | +-------------+ |Beautiful output| |Document| | !magic! | | | | {d}| | | | | +---+----+ +-------------+ \----------------/ : ^ | Lots of work | +-----------------------------------+   A good method implementation validates all of its preconditions before it continues.</description>
+    </item>
+    
+    <item>
       <title>Credits</title>
       <link>http://sheenp333.github.io/hugo/credits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
