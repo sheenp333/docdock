@@ -3,246 +3,205 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/content-organisation/logo/</loc>
+    <loc>http://sheenp333.github.io/docdock/content-organisation/logo/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/getting-start/</loc>
+    <loc>http://sheenp333.github.io/docdock/getting-start/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/getting-start/installation/</loc>
+    <loc>http://sheenp333.github.io/docdock/getting-start/installation/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/content-organisation/extramenu/</loc>
+    <loc>http://sheenp333.github.io/docdock/content-organisation/extramenu/</loc>
     <lastmod>2017-04-29T18:36:24+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/getting-start/configuration/</loc>
+    <loc>http://sheenp333.github.io/docdock/getting-start/configuration/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/content-organisation/customize-style/</loc>
+    <loc>http://sheenp333.github.io/docdock/content-organisation/customize-style/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/create-page/</loc>
+    <loc>http://sheenp333.github.io/docdock/create-page/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/content-organisation/</loc>
+    <loc>http://sheenp333.github.io/docdock/content-organisation/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/shortcodes/</loc>
+    <loc>http://sheenp333.github.io/docdock/shortcodes/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/search/</loc>
+    <loc>http://sheenp333.github.io/docdock/search/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/create-page/homepage/</loc>
+    <loc>http://sheenp333.github.io/docdock/create-page/homepage/</loc>
     <lastmod>2017-04-28T18:36:24+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/create-page/page-images/</loc>
+    <loc>http://sheenp333.github.io/docdock/create-page/page-images/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/</loc>
+    <loc>http://sheenp333.github.io/docdock/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/create-page/myslide/</loc>
+    <loc>http://sheenp333.github.io/docdock/create-page/myslide/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/create-page/page-slide/</loc>
+    <loc>http://sheenp333.github.io/docdock/create-page/page-slide/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/_header/</loc>
+    <loc>http://sheenp333.github.io/docdock/_header/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/post/example/</loc>
-    <lastmod>2016-12-14T12:33:44+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://sheenp333.github.io/hugo/tags/aop/</loc>
-    <lastmod>2016-12-14T12:33:44+01:00</lastmod>
+    <loc>http://sheenp333.github.io/docdock/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/categories/</loc>
-    <priority>0</priority>
+    <loc>http://sheenp333.github.io/docdock/credits/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/credits/</loc>
+    <loc>http://sheenp333.github.io/docdock/showcase/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/showcase/</loc>
-  </url>
-  
-  <url>
-    <loc>http://sheenp333.github.io/hugo/tags/domain-driven-design/</loc>
-    <lastmod>2016-12-14T12:33:44+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://sheenp333.github.io/hugo/tags/interesting/</loc>
-    <lastmod>2016-12-14T12:33:44+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://sheenp333.github.io/hugo/tags/junit/</loc>
-    <lastmod>2016-12-14T12:33:44+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://sheenp333.github.io/hugo/tags/modernization/</loc>
-    <lastmod>2016-12-14T12:33:44+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://sheenp333.github.io/hugo/post/</loc>
-    <lastmod>2016-12-14T12:33:44+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://sheenp333.github.io/hugo/tags/tag1/</loc>
+    <loc>http://sheenp333.github.io/docdock/tags/tag1/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/tags/tag2/</loc>
+    <loc>http://sheenp333.github.io/docdock/tags/tag2/</loc>
     <lastmod>2017-04-24T18:36:24+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/tags/</loc>
-    <lastmod>2016-12-14T12:33:44+01:00</lastmod>
+    <loc>http://sheenp333.github.io/docdock/tags/</loc>
+    <lastmod>2017-04-24T18:36:24+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/content-organisation/customize-style/theme-variants/</loc>
+    <loc>http://sheenp333.github.io/docdock/content-organisation/customize-style/theme-variants/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/shortcodes/alert/</loc>
+    <loc>http://sheenp333.github.io/docdock/shortcodes/alert/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/shortcodes/attachments/</loc>
+    <loc>http://sheenp333.github.io/docdock/shortcodes/attachments/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/shortcodes/button/</loc>
+    <loc>http://sheenp333.github.io/docdock/shortcodes/button/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/shortcodes/children/</loc>
+    <loc>http://sheenp333.github.io/docdock/shortcodes/children/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/shortcodes/excerpt/</loc>
+    <loc>http://sheenp333.github.io/docdock/shortcodes/excerpt/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/shortcodes/excerpt-include/</loc>
+    <loc>http://sheenp333.github.io/docdock/shortcodes/excerpt-include/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/shortcodes/expand/</loc>
+    <loc>http://sheenp333.github.io/docdock/shortcodes/expand/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/shortcodes/icon/</loc>
+    <loc>http://sheenp333.github.io/docdock/shortcodes/icon/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/shortcodes/image/</loc>
+    <loc>http://sheenp333.github.io/docdock/shortcodes/image/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/shortcodes/mermaid/</loc>
+    <loc>http://sheenp333.github.io/docdock/shortcodes/mermaid/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/shortcodes/notice/</loc>
+    <loc>http://sheenp333.github.io/docdock/shortcodes/notice/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/shortcodes/children/children-1/</loc>
+    <loc>http://sheenp333.github.io/docdock/shortcodes/children/children-1/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/shortcodes/children/children-1/children-1-1/</loc>
+    <loc>http://sheenp333.github.io/docdock/shortcodes/children/children-1/children-1-1/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/shortcodes/children/children-1/children-1-1/children-1-1-1/</loc>
+    <loc>http://sheenp333.github.io/docdock/shortcodes/children/children-1/children-1-1/children-1-1-1/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/</loc>
+    <loc>http://sheenp333.github.io/docdock/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/</loc>
+    <loc>http://sheenp333.github.io/docdock/shortcodes/children/children-1/children-1-1/children-1-1-1/children-1-1-1-1/children-1-1-1-1-1/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/shortcodes/children/children-2/</loc>
+    <loc>http://sheenp333.github.io/docdock/shortcodes/children/children-2/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/shortcodes/children/children-3/</loc>
+    <loc>http://sheenp333.github.io/docdock/shortcodes/children/children-3/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/shortcodes/children/children-4/</loc>
+    <loc>http://sheenp333.github.io/docdock/shortcodes/children/children-4/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/shortcodes/children/test/</loc>
+    <loc>http://sheenp333.github.io/docdock/shortcodes/children/test/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/shortcodes/children/children-2/test3/</loc>
+    <loc>http://sheenp333.github.io/docdock/shortcodes/children/children-2/test3/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/shortcodes/panel/</loc>
+    <loc>http://sheenp333.github.io/docdock/shortcodes/panel/</loc>
   </url>
   
   <url>
-    <loc>http://sheenp333.github.io/hugo/shortcodes/revealjs/</loc>
+    <loc>http://sheenp333.github.io/docdock/shortcodes/revealjs/</loc>
   </url>
   
 </urlset>
