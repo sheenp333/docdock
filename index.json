@@ -11,7 +11,7 @@
 	"title": "Getting start",
 	"tags": [],
 	"description": "",
-	"content": " Requirements Download Hugo binary for your OS (Windows, Linux, Mac) : it’s that simple\n Installation  HUGO v0.25 minimum required to use this theme The following steps are here to help you initialize your new website. If you don’t know Hugo at all, we strongly suggest you to train by following this great documentation for beginners.  Configuration  When building the website, you can set a theme by using --theme option. We suggest you to edit your configuration file and set the theme by default. Example with config.toml format.  "
+	"content": " Requirements Download Hugo binary for your OS (Windows, Linux, Mac) : it’s that simple\n Installation  \n Configuration  When building the website, you can set a theme by using --theme option. We suggest you to edit your configuration file and set the theme by default. Example with config.toml format.  "
 },
 {
 	"uri": "http://sheenp333.github.io/docdock/getting-start/installation/",
@@ -112,6 +112,27 @@
 	"content": "CompInfo\n"
 },
 {
+	"uri": "http://sheenp333.github.io/docdock/post/post2/",
+	"title": "Preconditions, Project Lombok, JSR 303 and JSR 308",
+	"tags": ["AOP", "Domain-driven Design", "Interesting", "JUnit", "Modernization"],
+	"description": "",
+	"content": "    A good method implementation validates all of its preconditions before it continues. Luckily there are different frameworks such as Project Lombok, JSR 303 Bean Validation API and JSR 308 Java Type Annotations available for this job. All of them are based on Java Annotations at method arguments, but they differ in runtime and compile time behavior. Here are some examples.\n Project Lombok Project Lombok adds language features for boilerplate free code to the Java ecosystem. It is based on the Java Annotation Processor facility of the Java compiler. One of the features is null check of method preconditions. This is basically done by annotating the method arguments with @lombok.NonNull as shown in the following example:\n import lombok.NonNull; import org.junit.Test; public class LombokNativeTest { public class LombokNative { private final String value; public LombokNative(@NonNull String value) { this.value = value; } } @Test(expected = NullPointerException.class) public void testCreate() { new LombokNative(null); } }   Lombok adds the null check boilerplate code at compile time. At runtime, a NullPointer Exception is thrown, as seen in the example above.\n   Project Lombok and JSR 303 There are other options to mark a method argument as not null-able. One of them is JSR 303 or the Java Validation API. Let us see what happens if we use it with Lombok:\n import org.junit.Test; import javax.validation.constraints.NotNull; public class Lombok303Test { public class Lombok303 { private final String value; public Lombok303(@NotNull String value) { this.value = value; } } @Test(expected = NullPointerException.class) public void testCreate() { new Lombok303(null); } }   Well, this test fails, no exception is thrown. This is due to the fact that Lombok parses \"NonNull\" annotations in a case insensitive manner. JSR 303 uses \"NotNull\", so Lombok ignores this annotation completely. To make it runnable, we have to run the JSR 303 Validator by hand. This can easily be done using Method validation with JSR303 and AspectJ.\n We can argue that JSR 303 is far more powerful than Lombok for validation. The Java Validator API even offers a method level validation, which can be greatly used with AOP to do all kind of validations. If you are using the Spring framework, you can also use the @Validated annotation for managed objects, which basically invokes the JSR 303 Validator in the background.\n   JSR 308 to the rescue? JSR 308 or Java Type Annotations were added with Java 8. It is basically an extension of the Java type system, and allows annotations almost everywhere in the code. And of course it comes with some @NonNull annotations. Here is an example:\n import org.junit.Test; import javax.annotation.Nonnull; public class JSR308Test { public class JSR308 { private final String value; public JSR308(@Nonnull String value) { this.value = value; } } @Test(expected = IllegalArgumentException.class) public void testInit() { new JSR308(null); } }   We get what we expected, an IllegalArgumentException.class. We get the same with Project Lombok. Where is the difference?\n Well, as mentioned above, JSR 303 is an extension of the type system. So wouldn\u0026#8217;t it be nice if the type system could help us to detect potential precondition violation at compile time? This is the case in the example above, this shouldn\u0026#8217;t even compile, as it clearly violates the contract. And here comes the true power of JSR 308 to play. By enabling a special compiler, we can transform the runtime exception into a compile time error. We just have to add the compiler to the pom.xml as seen here:\n \u0026lt;plugin\u0026gt; \u0026lt;artifactId\u0026gt;maven-compiler-plugin\u0026lt;/artifactId\u0026gt; \u0026lt;version\u0026gt;3.3\u0026lt;/version\u0026gt; \u0026lt;configuration\u0026gt; \u0026lt;source\u0026gt;1.8\u0026lt;/source\u0026gt; \u0026lt;target\u0026gt;1.8\u0026lt;/target\u0026gt; \u0026lt;fork\u0026gt;true\u0026lt;/fork\u0026gt; \u0026lt;annotationProcessors\u0026gt; \u0026lt;annotationProcessor\u0026gt; org.checkerframework.checker.nullness.NullnessChecker \u0026lt;/annotationProcessor\u0026gt; \u0026lt;/annotationProcessors\u0026gt; \u0026lt;/configuration\u0026gt; \u0026lt;dependencies\u0026gt; \u0026lt;dependency\u0026gt; \u0026lt;groupId\u0026gt;org.checkerframework\u0026lt;/groupId\u0026gt; \u0026lt;artifactId\u0026gt;compiler\u0026lt;/artifactId\u0026gt; \u0026lt;version\u0026gt;2.1.6\u0026lt;/version\u0026gt; \u0026lt;/dependency\u0026gt; \u0026lt;/dependencies\u0026gt; \u0026lt;/plugin\u0026gt;   and we get a compile time error if we try to compile the example above:\n Error:(35, 20) java: [argument.type.incompatible] incompatible types in argument. found : null required: @Initialized @NonNull String     Summary There are a number of options for compile time and runtime checking available. When it comes to method level precondition checking, JSR 303 with AOP is the most flexible and powerful option, but it offers only runtime type checking. JSR 308 brings back compile time checking by using a special compiler. Personally I think that we need both of them. Compile time checking can save a lot of time, but there are a lot of conditions that can only be detected at runtime, and here we can use JSR 303 with AOP do to method level validation on managed and un-managed instances. But every framework or language feature doesn\u0026#8217;t remove the need to write complete and useful unit tests.\n   "
+},
+{
+	"uri": "http://sheenp333.github.io/docdock/post/method-validation-with-jsr303-and-aspectj/",
+	"title": "Method validation with JSR303 and AspectJ",
+	"tags": ["AOP", "Interesting"],
+	"description": "A short tutorial about how to use Hibernate Validator for method level validation",
+	"content": "Hibernate Validator since version 4.2 supports method validation. For instance consider the following Java code:\n package de.mirkosertic.aspectj; import javax.validation.constraints.NotNull; public class Example { public void doNothing(String aValue) { } public String getString(String aValue) { return aValue; } public @NotNull String getNullString(String aValue) { return aValue; } public void doNothingSingleNotNull(@NotNull String aValue) { } public void doNothingMiddleNotNull(String aStart,@NotNull String aValue, String aEnd) { } public void doNothingEndNotNull(String aStart,String aValue, @NotNull String aEnd) { } }   Wouldn\u0026#8217;t it be cool to validate the method pre- and post conditions without coding too much? Here comes method validation and AspectJ to play. Using the following Aspect, we can validate the conditions using JSR303. If an argument does not match or validation fails, a ConstraintViolationException is thrown.\n package de.mirkosertic.aspectj; import org.aspectj.lang.ProceedingJoinPoint; import org.aspectj.lang.annotation.Around; import org.aspectj.lang.annotation.Aspect; import org.aspectj.lang.reflect.MethodSignature; import javax.validation.ConstraintViolation; import javax.validation.ConstraintViolationException; import javax.validation.Validation; import javax.validation.ValidatorFactory; import javax.validation.executable.ExecutableValidator; import java.util.Set; @Aspect public class ValidatorAspect { private ValidatorFactory validatorFactory; public ValidatorAspect() { validatorFactory = Validation.buildDefaultValidatorFactory(); } @Around(\"execution(@javax.validation.constraints.* public * * (..))\") public Object afterReturning(ProceedingJoinPoint aJoinPoint) throws Throwable { Object theReturnValue = aJoinPoint.proceed(); MethodSignature theSignature = (MethodSignature) aJoinPoint.getSignature(); ExecutableValidator theValidator = validatorFactory.getValidator().forExecutables(); Set\u0026lt;ConstraintViolation\u0026lt;Object\u0026gt;\u0026gt; theViolations = theValidator.validateReturnValue(aJoinPoint.getTarget(), theSignature.getMethod(), theReturnValue); if (theViolations.size()\u0026gt; 0) { throw new ConstraintViolationException(theViolations); } return theReturnValue; } @Around(\"execution(public * * (.., @javax.validation.constraints..* (*), ..))\") public Object pointcutMethodArgument(ProceedingJoinPoint aJoinPoint) throws Throwable { return validateInvocation(aJoinPoint); } private Object validateInvocation(ProceedingJoinPoint aJoinPoint) throws Throwable { MethodSignature theSignature = (MethodSignature) aJoinPoint.getSignature(); ExecutableValidator theValidator = validatorFactory.getValidator().forExecutables(); Set\u0026lt;ConstraintViolation\u0026lt;Object\u0026gt;\u0026gt; theViolations = theValidator.validateParameters(aJoinPoint.getTarget(), theSignature.getMethod(), aJoinPoint.getArgs()); if (theViolations.size()\u0026gt; 0) { throw new ConstraintViolationException(theViolations); } return aJoinPoint.proceed(); } }   Nice! For further reading, please check the Hibernate Validator documentation.\n "
+},
+{
+	"uri": "http://sheenp333.github.io/docdock/tags/aop/",
+	"title": "Aop",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "http://sheenp333.github.io/docdock/categories/",
 	"title": "Categories",
 	"tags": [],
@@ -131,6 +152,41 @@
 	"tags": [],
 	"description": "Hugo-built Sites with docdock theme",
 	"content": " https://invincible.site/ by @shazic "
+},
+{
+	"uri": "http://sheenp333.github.io/docdock/tags/domain-driven-design/",
+	"title": "Domain Driven Design",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://sheenp333.github.io/docdock/tags/interesting/",
+	"title": "Interesting",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://sheenp333.github.io/docdock/tags/junit/",
+	"title": "Junit",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://sheenp333.github.io/docdock/tags/modernization/",
+	"title": "Modernization",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://sheenp333.github.io/docdock/post/",
+	"title": "Posts",
+	"tags": [],
+	"description": "",
+	"content": ""
 },
 {
 	"uri": "http://sheenp333.github.io/docdock/tags/tag1/",

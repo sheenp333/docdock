@@ -78,6 +78,22 @@
   </url>
   
   <url>
+    <loc>http://sheenp333.github.io/docdock/post/post2/</loc>
+    <lastmod>2016-12-14T12:33:44+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://sheenp333.github.io/docdock/post/method-validation-with-jsr303-and-aspectj/</loc>
+    <lastmod>2013-06-26T10:29:19+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://sheenp333.github.io/docdock/tags/aop/</loc>
+    <lastmod>2016-12-14T12:33:44+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://sheenp333.github.io/docdock/categories/</loc>
     <priority>0</priority>
   </url>
@@ -88,6 +104,36 @@
   
   <url>
     <loc>http://sheenp333.github.io/docdock/showcase/</loc>
+  </url>
+  
+  <url>
+    <loc>http://sheenp333.github.io/docdock/tags/domain-driven-design/</loc>
+    <lastmod>2016-12-14T12:33:44+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sheenp333.github.io/docdock/tags/interesting/</loc>
+    <lastmod>2016-12-14T12:33:44+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sheenp333.github.io/docdock/tags/junit/</loc>
+    <lastmod>2016-12-14T12:33:44+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sheenp333.github.io/docdock/tags/modernization/</loc>
+    <lastmod>2016-12-14T12:33:44+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sheenp333.github.io/docdock/post/</loc>
+    <lastmod>2016-12-14T12:33:44+01:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -104,7 +150,7 @@
   
   <url>
     <loc>http://sheenp333.github.io/docdock/tags/</loc>
-    <lastmod>2017-04-24T18:36:24+02:00</lastmod>
+    <lastmod>2016-12-14T12:33:44+01:00</lastmod>
     <priority>0</priority>
   </url>
   

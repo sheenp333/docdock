@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.28" />
-    <meta name="description" content="This is a demo child page">
+    <meta name="description" content="A short tutorial about how to use Hibernate Validator for method level validation">
 
 
-    <title>page 3 :: CompInfo</title>
+    <title>Method validation with JSR303 and AspectJ :: CompInfo</title>
     <link rel="shortcut icon" href="/docdock/images/favicon.png" type="image/x-icon" />
     <link href="/docdock/css/nucleus.css" rel="stylesheet">
     <link href="/docdock/css/font-awesome.min.css" rel="stylesheet">
@@ -39,7 +39,7 @@
 
 </script>
   </head>
-  <body class="" data-url="/docdock/shortcodes/children/children-3/">
+  <body class="" data-url="/docdock/post/method-validation-with-jsr303-and-aspectj/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -419,7 +419,7 @@
   
     
     <li data-nav-id="/docdock/shortcodes/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -430,7 +430,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -515,7 +515,7 @@
   
     
     <li data-nav-id="/docdock/shortcodes/children/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -526,7 +526,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -821,8 +821,8 @@
   
     
     <li data-nav-id="/docdock/shortcodes/children/children-3/" class="dd-item 
-        parent
-        active
+        
+        
         
         ">
       <a href="/docdock/shortcodes/children/children-3/">
@@ -1092,7 +1092,7 @@
   
     
     <li data-nav-id="/docdock/post/" class="dd-item 
-        
+        parent
         
         
         ">
@@ -1103,7 +1103,7 @@
         
 
           
-            <i class="fa fa-angle-right fa-lg category-icon"></i>
+            <i class="fa fa-angle-down fa-lg category-icon"></i>
           
 
         
@@ -1146,7 +1146,7 @@
   
     
       <li data-nav-id="/docdock/post/method-validation-with-jsr303-and-aspectj/" class="dd-item
-     
+     active
       ">
         <a href="/docdock/post/method-validation-with-jsr303-and-aspectj/">
         <span>Method validation with JSR303 and AspectJ</span> 
@@ -1236,7 +1236,7 @@
               
               
             <div id="top-github-link">
-              <a class="github-link" href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/shortcodes/children/children-3/_index.md" target="blank">
+              <a class="github-link" href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/post/method-validation-with-jsr303-and-aspectj.adoc" target="blank">
                 <i class="fa fa-code-fork"></i>
                 Edit page
               </a>
@@ -1260,12 +1260,7 @@
 
 
 
-
-
-
- <a href='/docdock/'>DocDock Theme for Hugo</a> > <a href='/docdock/shortcodes/'>Shortcodes</a> > <a href='/docdock/shortcodes/children/'>children</a> > page 3
-
- 
+ <a href='/docdock/'>DocDock Theme for Hugo</a> > <a href='/docdock/post/'>Posts</a> > Method validation with JSR303 and AspectJ
 
  
 
@@ -1283,22 +1278,131 @@
           </div>
         
         
+          <div id="tags">
+            
+              <a class="label label-default" href="http://sheenp333.github.io/docdock//tags/aop">AOP</a>
+            
+              <a class="label label-default" href="http://sheenp333.github.io/docdock//tags/interesting">Interesting</a>
+            
+          </div>
+        
         <div id="body-inner">
           
-            <h1>page 3</h1>
+            <h1>Method validation with JSR303 and AspectJ</h1>
           
 
 
 
 
-<p>This is a demo child page</p>
+<div class="paragraph">
+<p>Hibernate Validator since version 4.2 supports method validation. For instance consider the following Java code:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">package de.mirkosertic.aspectj;
+
+import javax.validation.constraints.NotNull;
+
+public class Example {
+
+    public void doNothing(String aValue) {
+    }
+
+    public String getString(String aValue) {
+        return aValue;
+    }
+
+    public @NotNull String getNullString(String aValue) {
+        return aValue;
+    }
+
+    public void doNothingSingleNotNull(@NotNull String aValue) {
+    }
+
+    public void doNothingMiddleNotNull(String aStart,@NotNull String aValue, String aEnd) {
+    }
+
+    public void doNothingEndNotNull(String aStart,String aValue, @NotNull String aEnd) {
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Wouldn&#8217;t it be cool to validate the method pre- and post conditions without coding too much? Here comes method validation and AspectJ to play. Using the following Aspect, we can validate the conditions using JSR303. If an argument does not match or validation fails, a ConstraintViolationException is thrown.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">package de.mirkosertic.aspectj;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.reflect.MethodSignature;
+
+import javax.validation.ConstraintViolation;
+import javax.validation.ConstraintViolationException;
+import javax.validation.Validation;
+
+import javax.validation.ValidatorFactory;
+import javax.validation.executable.ExecutableValidator;
+import java.util.Set;
+
+@Aspect
+public class ValidatorAspect {
+
+    private ValidatorFactory validatorFactory;
+
+    public ValidatorAspect() {
+        validatorFactory = Validation.buildDefaultValidatorFactory();
+    }
+
+    @Around("execution(@javax.validation.constraints.* public * * (..))")
+    public Object afterReturning(ProceedingJoinPoint aJoinPoint) throws Throwable {
+
+        Object theReturnValue = aJoinPoint.proceed();
+
+        MethodSignature theSignature = (MethodSignature) aJoinPoint.getSignature();
+        ExecutableValidator theValidator = validatorFactory.getValidator().forExecutables();
+        Set&lt;ConstraintViolation&lt;Object&gt;&gt; theViolations = theValidator.validateReturnValue(aJoinPoint.getTarget(),
+          theSignature.getMethod(), theReturnValue);
+
+        if (theViolations.size()&gt; 0) {
+            throw new ConstraintViolationException(theViolations);
+        }
+
+        return theReturnValue;
+    }
+
+    @Around("execution(public * * (.., @javax.validation.constraints..* (*), ..))")
+    public Object pointcutMethodArgument(ProceedingJoinPoint aJoinPoint) throws Throwable {
+        return validateInvocation(aJoinPoint);
+    }
+
+    private Object validateInvocation(ProceedingJoinPoint aJoinPoint) throws Throwable {
+
+        MethodSignature theSignature = (MethodSignature) aJoinPoint.getSignature();
+
+        ExecutableValidator theValidator = validatorFactory.getValidator().forExecutables();
+        Set&lt;ConstraintViolation&lt;Object&gt;&gt; theViolations = theValidator.validateParameters(aJoinPoint.getTarget(),
+         theSignature.getMethod(), aJoinPoint.getArgs());
+
+        if (theViolations.size()&gt; 0) {
+            throw new ConstraintViolationException(theViolations);
+        }
+
+        return aJoinPoint.proceed();
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Nice! For further reading, please check the Hibernate Validator documentation.</p>
+</div>
 
 
 <footer class=" footline" >
 	
 </footer>
-
-
 
 
 
@@ -1536,7 +1640,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1551,9 +1654,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1603,7 +1703,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1618,9 +1717,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1742,7 +1838,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1763,9 +1858,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1949,6 +2041,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1962,6 +2055,9 @@
             
                 
                     
+                        
+                        
+                    
                 
                 
 
@@ -1978,6 +2074,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1999,10 +2096,10 @@
 
 
         
-            <a class="nav nav-prev" href="/docdock/shortcodes/children/children-2/test3/" title="page test 3"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/docdock/post/post2/" title="Preconditions, Project Lombok, JSR 303 and JSR 308"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/docdock/shortcodes/children/test/" title="page test" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/docdock/post/post2/" title="Preconditions, Project Lombok, JSR 303 and JSR 308" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -2029,3 +2126,4 @@
 
   </body>
 </html>
+
