@@ -123,14 +123,29 @@
   </url>
   
   <url>
+    <loc>http://sheenp333.github.io/docdock/tags/hugo/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://sheenp333.github.io/docdock/tags/interesting/</loc>
     <lastmod>2016-12-14T12:33:44+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>http://sheenp333.github.io/docdock/tags/introduction/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://sheenp333.github.io/docdock/tags/junit/</loc>
     <lastmod>2016-12-14T12:33:44+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://sheenp333.github.io/docdock/tags/markdown/</loc>
     <priority>0</priority>
   </url>
   
