@@ -60,6 +60,15 @@ Example from the current website, note the pre param which allows you to insert 
     </item>
     
     <item>
+      <title>Markdown Syntax</title>
+      <link>http://sheenp333.github.io/docdock/getting-start/mdsyntax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://sheenp333.github.io/docdock/getting-start/mdsyntax/</guid>
+      <description>The following resources are good introductions to various Markdown syntaxes: * Markdown Cheatsheet * Mmark syntax</description>
+    </item>
+    
+    <item>
       <title>Home page</title>
       <link>http://sheenp333.github.io/docdock/create-page/homepage/</link>
       <pubDate>Fri, 28 Apr 2017 18:36:24 +0200</pubDate>
