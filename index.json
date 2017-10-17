@@ -11,7 +11,7 @@
 	"title": "Getting start",
 	"tags": [],
 	"description": "",
-	"content": " Requirements Download Hugo binary for your OS (Windows, Linux, Mac) : it’s that simple\n Installation  \n Configuration  When building the website, you can set a theme by using --theme option. We suggest you to edit your configuration file and set the theme by default. Example with config.toml format.  "
+	"content": " Requirements Download Hugo binary for your OS (Windows, Linux, Mac) : it’s that simple\n Installation  \n Configuration  \n "
 },
 {
 	"uri": "http://sheenp333.github.io/docdock/getting-start/installation/",
