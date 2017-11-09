@@ -11,14 +11,14 @@
 	"title": "Getting start",
 	"tags": [],
 	"description": "",
-	"content": " Requirements Download Hugo binary for your OS (Windows, Linux, Mac) : it’s that simple\n Installation  HUGO v0.25 minimum required to use this theme The following steps are here to help you initialize your new website. If you don’t know Hugo at all, we strongly suggest you to train by following this great documentation for beginners.  Configuration  When building the website, you can set a theme by using --theme option. We suggest you to edit your configuration file and set the theme by default. Example with config.toml format.  Markdown Syntax  The following resources are good introductions to various Markdown syntaxes: Markdown Cheatsheet Mmark syntax Hugo-theme-docdock defines two types of pages. Default and Slide. Default is the common page like the current one you are reading. Slide is a page that use the full screen to display its markdown content as a reveals.js presentation. HomePage is a special content that will be displayed as home page content.  "
+	"content": " Requirements Download Hugo binary for your OS (Windows, Linux, Mac) : it’s that simple\n Installation  \n Configuration  When building the website, you can set a theme by using --theme option. We suggest you to edit your configuration file and set the theme by default. Example with config.toml format.  Markdown Syntax  The following resources are good introductions to various Markdown syntaxes: Simple Cheatsheet Markdown Cheatsheet Mmark syntax Emoji Cheatsheet  About the Search Engine  \n "
 },
 {
 	"uri": "http://sheenp333.github.io/docdock/getting-start/installation/",
 	"title": "Installation",
 	"tags": [],
 	"description": "",
-	"content": "HUGO v0.25 minimum required to use this theme The following steps are here to help you initialize your new website. If you don’t know Hugo at all, we strongly suggest you to train by following this great documentation for beginners. Create Your Documentation Hugo provides a new command to create a new website.\n$ hugo new site \u0026lt;new_website\u0026gt;  Install The Theme Install the Hugo-theme-docdock theme by following this\nSwitch into the themes directory and download the theme\n$ cd themes $ git clone https://github.com/vjeantet/hugo-theme-docdock.git docdock  Alternatively, you can  download the theme as .zip file and extract it in the themes directory\nBasic Configuration Follow instructions here\n"
+	"content": "HUGO v0.25 minimum required to use this theme The following steps are here to help you initialize your new website. If you don’t know Hugo at all, we strongly suggest you to train by following this great documentation for beginners. Create Your Documentation Hugo provides a new command to create a new website.\n$ hugo new site \u0026lt;new_website\u0026gt;  Install The Theme Install the Hugo-theme-docdock theme by following this\nSwitch into the themes directory and download the theme\n$ cd themes $ git clone https://github.com/sheenp333/docdock.git docdock  Alternatively, you can  download the theme as .zip file and extract it in the themes directory\nBasic Configuration Follow instructions here\n"
 },
 {
 	"uri": "http://sheenp333.github.io/docdock/content-organisation/extramenu/",
@@ -39,7 +39,7 @@
 	"title": "Markdown Syntax",
 	"tags": ["Hugo", "Introduction", "Markdown"],
 	"description": "",
-	"content": "The following resources are good introductions to various Markdown syntaxes:\n Markdown Cheatsheet Mmark syntax  Hugo-theme-docdock defines two types of pages. Default and Slide.\n Default is the common page like the current one you are reading. Slide is a page that use the full screen to display its markdown content as a reveals.js presentation. HomePage is a special content that will be displayed as home page content.  "
+	"content": "The following resources are good introductions to various Markdown syntaxes:\n Simple Cheatsheet Markdown Cheatsheet Mmark syntax Emoji Cheatsheet  "
 },
 {
 	"uri": "http://sheenp333.github.io/docdock/content-organisation/customize-style/",
@@ -70,7 +70,7 @@
 	"content": "A bunch of Shortcodes are available with this theme :\n alert  The alert shortcode allows you to highlight information in your page.\n attachments  The Attachments shortcode displays a list of files attached to a page.\n button  Display an actionable button in your page.\n children  List the child pages of a page\n excerpt  The Excerpt shortcode is used to mark a part of a page\u0026#39;s content for re-use.\n excerpt-include  \n expand  Displays an expandable/collapsible section of text on your page\n icon  Display an icon.\n image  \n mermaid  \n notice  Disclaimers to help you structure your page\n panel  Allow you to highlight information or put it in a box.\n revealjs  present content as a reveal.js slide\n "
 },
 {
-	"uri": "http://sheenp333.github.io/docdock/search/",
+	"uri": "http://sheenp333.github.io/docdock/getting-start/search/",
 	"title": "About the Search Engine",
 	"tags": [],
 	"description": "",

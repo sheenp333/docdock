@@ -66,8 +66,7 @@ Example from the current website, note the pre param which allows you to insert 
       
       <guid>http://sheenp333.github.io/docdock/getting-start/mdsyntax/</guid>
       <description>The following resources are good introductions to various Markdown syntaxes:
- Markdown Cheatsheet Mmark syntax  Hugo-theme-docdock defines two types of pages. Default and Slide.
- Default is the common page like the current one you are reading. Slide is a page that use the full screen to display its markdown content as a reveals.js presentation. HomePage is a special content that will be displayed as home page content.  </description>
+ Simple Cheatsheet Markdown Cheatsheet Mmark syntax Emoji Cheatsheet  </description>
     </item>
     
     <item>
