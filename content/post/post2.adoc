@@ -2,6 +2,7 @@
 date = "2016-12-14T12:33:44+01:00"
 title = "Preconditions, Project Lombok, JSR 303 and JSR 308"
 tags = ["AOP", "Domain-driven Design", "Interesting", "JUnit", "Modernization"]
+categories = ["d"]
 draft = false
 +++
 include::globals.adoc[]

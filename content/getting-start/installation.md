@@ -22,9 +22,9 @@ Install the **Hugo-theme-docdock** theme by following this
 Switch into the themes directory and download the theme
 
 	$ cd themes
-	$ git clone https://github.com/vjeantet/hugo-theme-docdock.git docdock
+	$ git clone https://github.com/sheenp333/docdock.git docdock
 
-Alternatively, you can [{{%icon download%}} download the theme as .zip](https://github.com/vjeantet/hugo-theme-docdock/archive/master.zip) file and extract it in the themes directory
+Alternatively, you can [{{%icon download%}} download the theme as .zip](https://github.com/sheenp333/docdock/archive/master.zip) file and extract it in the themes directory
 
 ## Basic Configuration
 

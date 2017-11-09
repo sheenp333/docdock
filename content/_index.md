@@ -1,11 +1,11 @@
 +++
-title = "DocDock Theme for Hugo"
+title = "CompInfo"
 description = ""
 date = "2017-04-24T18:36:24+02:00"
 
 +++
 
-# Hugo docDock theme
+# Computer Info
 [Hugo-theme-docdock {{%icon fa-github%}}](https://github.com/vjeantet/hugo-theme-docdock) is a theme for Hugo, a fast and modern static website engine written in Go. Hugo is often used for blogs, **this theme is fully designed for documentation.**
 
 This theme is a partial porting of the [Learn theme of matcornic {{%icon fa-github%}}](https://github.com/matcornic/hugo-theme-learn).
@@ -25,6 +25,7 @@ This theme is a partial porting of the [Learn theme of matcornic {{%icon fa-gith
 * [Mermaid diagram]({{%relref "shortcodes/mermaid.md" %}}) (flowchart, sequence, gantt)
 * [Icons]({{%relref "shortcodes/icon.md" %}}), [Buttons]({{%relref "shortcodes/button.md" %}}), [Alerts]({{%relref "shortcodes/alert.md" %}}), [Panels]({{%relref "shortcodes/panel.md" %}}), [Tip/Note/Info/Warning boxes]({{%relref "shortcodes/notice.md" %}}), [Expand]({{%relref "shortcodes/expand.md" %}})
 * [customizable look and feel]({{%relref "content-organisation/customize-style/_index.md"%}}), [theme variants]({{%relref "content-organisation/customize-style/theme-variants.md"%}})
+* Ability to [asciidoctor](http://asciidoctor.org/) and/or asciidoc-diagram - *.adoc
 
 
 

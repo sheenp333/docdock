@@ -2,10 +2,10 @@
 title = "Create Page"
 description = ""
 date = "2017-04-24T18:36:24+02:00"
-creatordisplayname = "Valere JEANTET"
-creatoremail = "valere.jeantet@gmail.com"
-lastmodifierdisplayname = "Valere JEANTET"
-lastmodifieremail = "valere.jeantet@gmail.com"
+creatordisplayname = "Pat Sheen"
+creatoremail = "sheenp333@gmail.com"
+lastmodifierdisplayname = "Pat Sheen"
+lastmodifieremail = "sheenp333@gmail.com"
 tags = ["tag1","tag2"]
 weight = 10
 pre ="<i class='fa fa-edit'></i> "
@@ -35,13 +35,13 @@ Hugo-theme-docdock uses the following parameters on top of the existing ones :
 	type="page"
 
 	# Creator's Display name
-	creatordisplayname = "Valere JEANTET"
+	creatordisplayname = "Pat Sheen"
 	# Creator's Email
-	creatoremail = "valere.jeantet@gmail.com"
+	creatoremail = "sheenp333@gmail.com"
 	# LastModifier's Display name
-	lastmodifierdisplayname = "Valere JEANTET"
+	lastmodifierdisplayname = "Pat Sheen"
 	# LastModifier's Email
-	lastmodifieremail = "valere.jeantet@gmail.com"
+	lastmodifieremail = "sheenp333@gmail.com"
 	+++
 
 
