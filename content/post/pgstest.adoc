@@ -1,0 +1,51 @@
++++
+date = "2016-12-14T12:33:44+01:00"
+title = "Pat Sheen test"
+tags = ["Testing", "Script"]
+categories = ["d"]
+draft = false
++++
+include::globals.adoc[]
+
+[plantuml]
+----
+skinparam handwritten true
+skinparam monochrome true
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+
+Alice -> Bob: Another authentication Request
+Alice <-- Bob: another authentication Response
+----
+
+
+A good method implementation validates all of its preconditions before it continues. Luckily there are different frameworks such as Project Lombok, JSR 303 Bean Validation API and JSR 308 Java Type Annotations available for this job.  All of them are based on Java Annotations at method arguments, but they differ in runtime and compile time behavior. Here are some examples.
+
+== Project Lombok
+Project Lombok adds language features for boilerplate free code to the Java ecosystem. It is based on the Java Annotation Processor facility of the Java compiler. One of the features is null check of method preconditions. This is basically done by annotating the method arguments with @lombok.NonNull as shown in the following example:
+
+[source,java]
+----
+import lombok.NonNull;
+import org.junit.Test;
+
+public class LombokNativeTest {
+
+    public class LombokNative {
+
+        private final String value;
+
+        public LombokNative(@NonNull String value) {
+            this.value = value;
+        }
+    }
+
+    @Test(expected = NullPointerException.class)
+    public void testCreate() {
+        new LombokNative(null);
+    }
+}
+----
+
+== Summary
+There are a number of options for compile time and runtime checking available. When it comes to method level precondition checking, JSR 303 with AOP is the most flexible and powerful option, but it offers only runtime type checking. JSR 308 brings back compile time checking by using a special compiler. Personally I think that we need both of them. Compile time  checking can save a lot of time, but there are a lot of conditions that can only be detected at runtime, and here we can use JSR 303 with AOP do to method level validation on managed and un-managed instances. But every framework or language feature doesn't remove the need to write complete and useful unit tests.
