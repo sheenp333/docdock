@@ -7,7 +7,7 @@
     <meta name="description" content="">
 
 
-    <title>D :: CompInfo</title>
+    <title>Pat Sheen test :: CompInfo</title>
     <link rel="shortcut icon" href="/docdock/images/favicon.png" type="image/x-icon" />
     <link href="/docdock/css/nucleus.css" rel="stylesheet">
     <link href="/docdock/css/font-awesome.min.css" rel="stylesheet">
@@ -40,7 +40,7 @@
 </script>
 
   </head>
-  <body class="" data-url="/docdock/categories/d/">
+  <body class="" data-url="/docdock/development/pgstest/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -89,7 +89,7 @@
   
     
     <li data-nav-id="/docdock/development/" class="dd-item 
-        
+        parent
         
         parent
         ">
@@ -123,7 +123,7 @@
   
     
       <li data-nav-id="/docdock/development/pgstest/" class="dd-item
-     
+     active
       ">
         <a href="/docdock/development/pgstest/">
         <span>Pat Sheen test</span> 
@@ -1185,7 +1185,7 @@
     
     <li data-nav-id="/docdock/post/" class="dd-item 
         
-        active
+        
         
         ">
       <a href="/docdock/post/">
@@ -1344,6 +1344,17 @@
         
           <div id="top-bar">
             
+              
+              
+              
+            <div id="top-github-link">
+              <a class="github-link" href="https://github.com/sheenp333/docdock/edit/master/exampleSite/content/development/pgstest.adoc" target="blank">
+                <i class="fa fa-code-fork"></i>
+                Edit page
+              </a>
+            </div>
+              
+            
 
             <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
                 <span id="sidebar-toggle-span">
@@ -1355,7 +1366,17 @@
                 <span class="links">
                 
 
- D
+
+
+
+
+
+
+ <a href='/docdock/'>CompInfo</a> > <a href='/docdock/development/'>Development</a> > Pat Sheen test
+
+ 
+
+ 
 
    
                 </span>
@@ -1369,133 +1390,79 @@
           </div>
         
         
+          <div id="tags">
+            
+              <a class="label label-default" href="http://sheenp333.github.io/docdock//tags/testing">Testing</a>
+            
+              <a class="label label-default" href="http://sheenp333.github.io/docdock//tags/script">Script</a>
+            
+          </div>
+        
         <div id="body-inner">
           
-            <h1>D</h1>
+            <h1>Pat Sheen test</h1>
           
 
 
 
 
+<div class="imageblock">
+<div class="content">
+<img src="/docdock/media/diag-0c7dadf0ab61bc70e11a52bdb25bf907.png" alt="diag 0c7dadf0ab61bc70e11a52bdb25bf907" width="760" height="444">
+</div>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/docdock/media/diag-8c0a323a9267ab90f03e57136f1e2b89.png" alt="diag 8c0a323a9267ab90f03e57136f1e2b89" width="298" height="214">
+</div>
+</div>
+<div class="paragraph">
+<p>A good method implementation validates all of its preconditions before it continues. Luckily there are different frameworks such as Project Lombok, JSR 303 Bean Validation API and JSR 308 Java Type Annotations available for this job.  All of them are based on Java Annotations at method arguments, but they differ in runtime and compile time behavior. Here are some examples.</p>
+</div>
+<div class="sect1">
+<h2 id="_project_lombok">Project Lombok</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Project Lombok adds language features for boilerplate free code to the Java ecosystem. It is based on the Java Annotation Processor facility of the Java compiler. One of the features is null check of method preconditions. This is basically done by annotating the method arguments with @lombok.NonNull as shown in the following example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">import lombok.NonNull;
+import org.junit.Test;
+
+public class LombokNativeTest {
+
+    public class LombokNative {
+
+        private final String value;
+
+        public LombokNative(@NonNull String value) {
+            this.value = value;
+        }
+    }
+
+    @Test(expected = NullPointerException.class)
+    public void testCreate() {
+        new LombokNative(null);
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_summary">Summary</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are a number of options for compile time and runtime checking available. When it comes to method level precondition checking, JSR 303 with AOP is the most flexible and powerful option, but it offers only runtime type checking. JSR 308 brings back compile time checking by using a special compiler. Personally I think that we need both of them. Compile time  checking can save a lot of time, but there are a lot of conditions that can only be detected at runtime, and here we can use JSR 303 with AOP do to method level validation on managed and un-managed instances. But every framework or language feature doesn&#8217;t remove the need to write complete and useful unit tests.</p>
+</div>
+</div>
+</div>
 
 
 <footer class=" footline" >
 	
 </footer>
-
-
-
-	
-
-	<div class="extra-pagination inner">
-	<nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 on 1</span>
-	
-</nav>
-
-	</div>
-
-	
-	   <article class="post development">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/docdock/development/pgstest/">Pat Sheen test</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p>A good method implementation validates all of its preconditions before it continues. Luckily there are different frameworks such as Project Lombok, JSR 303 Bean Validation API and JSR 308 Java Type Annotations available for this job. All of them are based on Java Annotations at method arguments, but they differ in runtime and compile time behavior. Here are some examples.
- Project Lombok Project Lombok adds language features for boilerplate free code to the Java ecosystem. <a class="read-more" href="/docdock/development/pgstest/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
-
-        
-          
-            
-                <a class="label label-default" href="http://sheenp333.github.io/docdock/tags/testing/">Testing</a>
-            
-                <a class="label label-default" href="http://sheenp333.github.io/docdock/tags/script/">Script</a>
-            
-        
-
-    </footer>
-</article>
-
-
-
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/docdock/post/pgstest/">Pat Sheen test</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p>A good method implementation validates all of its preconditions before it continues. Luckily there are different frameworks such as Project Lombok, JSR 303 Bean Validation API and JSR 308 Java Type Annotations available for this job. All of them are based on Java Annotations at method arguments, but they differ in runtime and compile time behavior. Here are some examples.
- Project Lombok Project Lombok adds language features for boilerplate free code to the Java ecosystem. <a class="read-more" href="/docdock/post/pgstest/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
-
-        
-          
-            
-                <a class="label label-default" href="http://sheenp333.github.io/docdock/tags/testing/">Testing</a>
-            
-                <a class="label label-default" href="http://sheenp333.github.io/docdock/tags/script/">Script</a>
-            
-        
-
-    </footer>
-</article>
-
-
-
-
-	
-	   <article class="post post">
-    <header class="post-header">
-        <h2 class="post-title"><a href="/docdock/post/post2/">Preconditions, Project Lombok, JSR 303 and JSR 308</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p>A good method implementation validates all of its preconditions before it continues. Luckily there are different frameworks such as Project Lombok, JSR 303 Bean Validation API and JSR 308 Java Type Annotations available for this job. All of them are based on Java Annotations at method arguments, but they differ in runtime and compile time behavior. Here are some examples.
- Project Lombok Project Lombok adds language features for boilerplate free code to the Java ecosystem. <a class="read-more" href="/docdock/post/post2/">&raquo;</a></p>
-    </section>
-    <footer class=" footline" >
-         
-        
-
-        
-          
-            
-                <a class="label label-default" href="http://sheenp333.github.io/docdock/tags/aop/">AOP</a>
-            
-                <a class="label label-default" href="http://sheenp333.github.io/docdock/tags/domain-driven-design/">Domain-driven Design</a>
-            
-                <a class="label label-default" href="http://sheenp333.github.io/docdock/tags/interesting/">Interesting</a>
-            
-                <a class="label label-default" href="http://sheenp333.github.io/docdock/tags/junit/">JUnit</a>
-            
-                <a class="label label-default" href="http://sheenp333.github.io/docdock/tags/modernization/">Modernization</a>
-            
-        
-
-    </footer>
-</article>
-
-
-
-
-	
-
-	<div style="margin-bottom:2rem"></div>
-
-	<nav class="pagination" role="navigation">
-	
-	<span class="page-number">Page 1 on 1</span>
-	
-</nav>
-
 
 
 
@@ -1531,8 +1498,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -1546,6 +1511,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -1566,219 +1532,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
                         
-                    
-                    
-
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1848,6 +1603,220 @@
 
                     
                     
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
                         
                     
                     
@@ -2009,22 +1978,6 @@
                     
             
         
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
                     
             
         
@@ -2157,9 +2110,6 @@
             
         
                     
-            
-        
-                    
                         
             
             
@@ -2192,6 +2142,25 @@
                     
 
                     
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
                         
             
             
@@ -2250,8 +2219,10 @@
 
 
         
+            <a class="nav nav-prev" href="/docdock/development/" title="Development"> <i class="fa fa-chevron-left"></i></a>
         
-            <a class="nav nav-next" href="/docdock/development/" title="Development" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+            <a class="nav nav-next" href="/docdock/getting-start/" title="Getting started" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -2278,3 +2249,4 @@
 
   </body>
 </html>
+
