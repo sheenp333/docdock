@@ -1,6 +1,6 @@
 [
 {
-	"uri": "http://sheenp333.github.io/docdock/content-organisation/logo/",
+	"uri": "http://sheenp333.github.io/docdock/getting-start/content-organisation/logo/",
 	"title": "Logo placeholder",
 	"tags": [],
 	"description": "",
@@ -11,7 +11,7 @@
 	"title": "Getting start",
 	"tags": [],
 	"description": "",
-	"content": " Requirements Download Hugo binary for your OS (Windows, Linux, Mac) : it’s that simple\n Installation  \n Configuration  When building the website, you can set a theme by using --theme option. We suggest you to edit your configuration file and set the theme by default. Example with config.toml format.  Markdown Syntax  The following resources are good introductions to various Markdown syntaxes: Simple Cheatsheet Markdown Cheatsheet Mmark syntax Emoji Cheatsheet  Create Page  \n Shortcodes  \n About the Search Engine  \n "
+	"content": " Requirements Download Hugo binary for your OS (Windows, Linux, Mac) : it’s that simple\n Installation  \n Configuration  \n Markdown Syntax  \n Create Page  \n Content Organisation  \n Shortcodes  \n About the Search Engine  \n "
 },
 {
 	"uri": "http://sheenp333.github.io/docdock/getting-start/installation/",
@@ -21,7 +21,7 @@
 	"content": "HUGO v0.25 minimum required to use this theme The following steps are here to help you initialize your new website. If you don’t know Hugo at all, we strongly suggest you to train by following this great documentation for beginners. Create Your Documentation Hugo provides a new command to create a new website.\n$ hugo new site \u0026lt;new_website\u0026gt;  Install The Theme Install the Hugo-theme-docdock theme by following this\nSwitch into the themes directory and download the theme\n$ cd themes $ git clone https://github.com/sheenp333/docdock.git docdock  Alternatively, you can  download the theme as .zip file and extract it in the themes directory\nBasic Configuration Follow instructions here\n"
 },
 {
-	"uri": "http://sheenp333.github.io/docdock/content-organisation/extramenu/",
+	"uri": "http://sheenp333.github.io/docdock/getting-start/content-organisation/extramenu/",
 	"title": "Extra menu entries",
 	"tags": [],
 	"description": "",
@@ -42,7 +42,7 @@
 	"content": "The following resources are good introductions to various Markdown syntaxes:\n Simple Cheatsheet Markdown Cheatsheet Mmark syntax Emoji Cheatsheet  "
 },
 {
-	"uri": "http://sheenp333.github.io/docdock/content-organisation/customize-style/",
+	"uri": "http://sheenp333.github.io/docdock/getting-start/content-organisation/customize-style/",
 	"title": "Customize website look and feel",
 	"tags": [],
 	"description": "",
@@ -56,7 +56,7 @@
 	"content": " Hugo-theme-docdock defines two types of pages. Default and Slide.\n Default is the common page like the current one you are reading. Slide is a page that use the full screen to display its markdown content as a reveals.js presentation. HomePage is a special content that will be displayed as home page content.  To tell Hugo-theme-docdock to consider a page as a slide, just add a type=\u0026quot;slide\u0026quot;in then frontmatter of your file.  read more on page as slide\nHugo-theme-docdock provides archetypes to help you create this kind of pages.\nFront Matter Each Hugo page has to define a Front Matter in yaml, toml or json.\nHugo-theme-docdock uses the following parameters on top of the existing ones :\n+++ # Type of content, set \u0026quot;slide\u0026quot; to display it fullscreen with reveal.js type=\u0026quot;page\u0026quot; # Creator's Display name creatordisplayname = \u0026quot;Pat Sheen\u0026quot; # Creator's Email creatoremail = \u0026quot;sheenp333@gmail.com\u0026quot; # LastModifier's Display name lastmodifierdisplayname = \u0026quot;Pat Sheen\u0026quot; # LastModifier's Email lastmodifieremail = \u0026quot;sheenp333@gmail.com\u0026quot; +++  Ordering Hugo provides a flexible way to handle order for your pages.\nThe simplest way is to use weight parameter in the front matter of your page.\n Read more on content organization\n"
 },
 {
-	"uri": "http://sheenp333.github.io/docdock/content-organisation/",
+	"uri": "http://sheenp333.github.io/docdock/getting-start/content-organisation/",
 	"title": "Content Organisation",
 	"tags": [],
 	"description": "",
@@ -266,7 +266,7 @@
 	"content": ""
 },
 {
-	"uri": "http://sheenp333.github.io/docdock/content-organisation/customize-style/theme-variants/",
+	"uri": "http://sheenp333.github.io/docdock/getting-start/content-organisation/customize-style/theme-variants/",
 	"title": "Theme variants",
 	"tags": [],
 	"description": "change theme style/colors",
@@ -298,7 +298,7 @@
 	"title": "children",
 	"tags": [],
 	"description": "List the child pages of a page",
-	"content": " Use the children shortcode to list the child pages of a page and the further descendants (children\u0026rsquo;s children). By default, the shortcode displays links to the child pages.\nUsage    Parameter Default Description     page current Specify the page name (section name) to display children for   style \u0026ldquo;li\u0026rdquo; Choose the style used to display descendants. It could be any HTML tag name   showhidden \u0026ldquo;false\u0026rdquo; When true, child pages hidden from the menu will be displayed   description \u0026ldquo;false\u0026rdquo; Allows you to include a short text under each page in the list.when no description exists for the page, children shortcode takes the first 70 words of your content. read more info about summaries on gohugo.io   depth 1 Enter a number to specify the depth of descendants to display. For example, if the value is 2, the shortcode will display 2 levels of child pages. Tips: set 999 to get all descendants    sort none Sort Children By\nWeight - to sort on menu orderName - to sort alphabetically on menu labelIdentifier - to sort alphabetically on identifier set in frontmatterURL - URL    Demo {{% children %}}   page 1   page 2   page 3   page test   {{% children description=\u0026quot;true\u0026quot; %}}   page 1  This is a demo child page\n page 2  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n page 3  This is a demo child page\n page test  This is a page test\n {{% children depth=\u0026quot;3\u0026quot; showhidden=\u0026quot;true\u0026quot; %}}   page 1    page 1-1    page 1-1-1   \n page 2 \n  page test 3    \n page 3 \n   page 4 \n   page test \n  \n{{% children style=\u0026quot;h2\u0026quot; depth=\u0026quot;3\u0026quot; description=\u0026quot;true\u0026quot; %}}   page 1  This is a demo child page\n page 1-1  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n page 1-1-1  This is a demo child page\n page 2  \n page test 3  This is a page test\n page 3  This is a demo child page\n page test  This is a page test\n {{% children style=\u0026quot;div\u0026quot; depth=\u0026quot;999\u0026quot; %}}   page 1   page 1-1   page 1-1-1   page 1-1-1-1   page 1-1-1-1-1   page 2   page test 3   page 3   page test   "
+	"content": " Use the children shortcode to list the child pages of a page and the further descendants (children\u0026rsquo;s children). By default, the shortcode displays links to the child pages.\nUsage    Parameter Default Description     page current Specify the page name (section name) to display children for   style \u0026ldquo;li\u0026rdquo; Choose the style used to display descendants. It could be any HTML tag name   showhidden \u0026ldquo;false\u0026rdquo; When true, child pages hidden from the menu will be displayed   description \u0026ldquo;false\u0026rdquo; Allows you to include a short text under each page in the list.when no description exists for the page, children shortcode takes the first 70 words of your content. read more info about summaries on gohugo.io   depth 1 Enter a number to specify the depth of descendants to display. For example, if the value is 2, the shortcode will display 2 levels of child pages. Tips: set 999 to get all descendants    sort none Sort Children By\nWeight - to sort on menu orderName - to sort alphabetically on menu labelIdentifier - to sort alphabetically on identifier set in frontmatterURL - URL    Demo {{% children %}}   page 1   page 2   page 3   page test   {{% children description=\u0026quot;true\u0026quot; %}}   page 1  This is a demo child page\n page 2  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n page 3  This is a demo child page\n page test  This is a page test\n {{% children depth=\u0026quot;3\u0026quot; showhidden=\u0026quot;true\u0026quot; %}}   page 1    page 1-1    page 1-1-1   \n page 2 \n  page test 3    \n page 3 \n   page 4 \n   page test \n  \n{{% children style=\u0026quot;h2\u0026quot; depth=\u0026quot;3\u0026quot; description=\u0026quot;true\u0026quot; %}}   page 1  This is a demo child page\n page 1-1  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod\n page 1-1-1  This is a demo child page\n page 2  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n page test 3  This is a page test\n page 3  This is a demo child page\n page test  This is a page test\n {{% children style=\u0026quot;div\u0026quot; depth=\u0026quot;999\u0026quot; %}}   page 1   page 1-1   page 1-1-1   page 1-1-1-1   page 1-1-1-1-1   page 2   page test 3   page 3   page test   "
 },
 {
 	"uri": "http://sheenp333.github.io/docdock/getting-start/shortcodes/excerpt/",
