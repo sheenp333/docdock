@@ -7,7 +7,7 @@
     <meta name="description" content="">
 
 
-    <title>header :: CompInfo</title>
+    <title> :: CompInfo</title>
     <link rel="shortcut icon" href="/docdock/images/favicon.png" type="image/x-icon" />
     <link href="/docdock/css/nucleus.css" rel="stylesheet">
     <link href="/docdock/css/font-awesome.min.css" rel="stylesheet">
@@ -40,7 +40,7 @@
 </script>
 
   </head>
-  <body class="" data-url="/docdock/_header/">
+  <body class="" data-url="/docdock/development/ruby/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -89,7 +89,7 @@
   
     
     <li data-nav-id="/docdock/development/" class="dd-item 
-        
+        parent
         
         parent
         ">
@@ -143,7 +143,7 @@
   
     
       <li data-nav-id="/docdock/development/ruby/" class="dd-item
-     
+     active
       ">
         <a href="/docdock/development/ruby/">
         <span></span> 
@@ -1368,7 +1368,7 @@
               
               
             <div id="top-github-link">
-              <a class="github-link" href="https://github.com/sheenp333/docdock/edit/master/exampleSite/content/_header.md" target="blank">
+              <a class="github-link" href="https://github.com/sheenp333/docdock/edit/master/exampleSite/content/development/ruby.adoc" target="blank">
                 <i class="fa fa-code-fork"></i>
                 Edit page
               </a>
@@ -1389,7 +1389,12 @@
 
 
 
- <a href='/docdock/'>CompInfo</a> > header
+
+
+
+ <a href='/docdock/'>CompInfo</a> > <a href='/docdock/development/'>Development</a> > 
+
+ 
 
  
 
@@ -1407,13 +1412,42 @@
         
         <div id="body-inner">
           
-            <h1>header</h1>
+            <h1></h1>
           
 
 
 
 
-<p>CompInfo</p>
+<div class="paragraph">
+<p>#Introduction
+#Installation
+*[CentOS6 Install Ruby (and Rails)](<a href="https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-on-centos-6" class="bare">https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-on-centos-6</a>)</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>sudo yum install ruby
+sudo yum install gcc g++ make automake autoconf curl-devel openssl-devel zlib-devel httpd-devel apr-devel apr-util-devel sqlite-devel
+sudo yum install ruby-rdoc ruby-devel
+sudo yum install rubygems
+sudo gem update
+sudo gem update --system
+sudo gem install rails -V # possibly slow so -V will show steps
+sudo gem install asciidoctor # for asciidoctor</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>*[Install Gems with no network](<a href="http://help.rubygems.org/kb/rubygems/installing-gems-with-no-network" class="bare">http://help.rubygems.org/kb/rubygems/installing-gems-with-no-network</a>)
+**Gem cache - gem environment - INSTALLATION DIRECTORY and GEM PATHS cache directories</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>cd download/directory
+gem install --force --local *.gem</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>*Install manually using downloads [[Rose Hosting|https://www.rosehosting.com/blog/how-to-install-ruby-1-9-3-and-rubygems-1-8-24-on-centos-6-2/]]</p>
+</div>
 
 
 <footer class=" footline" >
@@ -1454,8 +1488,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -1469,6 +1501,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1486,137 +1521,6 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1637,87 +1541,8 @@
             
                 
                     
-                
-                
-
-                    
-                    
                         
-                    
-                    
-
-                    
                         
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -1787,6 +1612,220 @@
 
                     
                     
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
                         
                     
                     
@@ -1948,38 +1987,6 @@
                     
             
         
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
                     
             
         
@@ -2096,6 +2103,38 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -2189,8 +2228,10 @@
 
 
         
+            <a class="nav nav-prev" href="/docdock/development/pgstest/" title="Pat Sheen test"> <i class="fa fa-chevron-left"></i></a>
         
-            <a class="nav nav-next" href="/docdock/development/" title="Development" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+            <a class="nav nav-next" href="/docdock/getting-start/" title="Getting started" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
