@@ -1496,7 +1496,8 @@
 
 			
 				
-<p></p>
+<p><p>When building the website, you can set a theme by using <code>--theme</code> option. We suggest you to edit your configuration file and set the theme by default. Example with <code>config.toml</code> format.
+</p></p>
 				
 			
 		
@@ -1525,7 +1526,8 @@
 
 			
 				
-<p></p>
+<p>The following resources are good introductions to various Markdown syntaxes:
+ Simple Cheatsheet Markdown Cheatsheet Mmark syntax Emoji Cheatsheet  </p>
 				
 			
 		
@@ -1554,7 +1556,8 @@
 
 			
 				
-<p></p>
+<p>Hugo-theme-docdock defines two types of pages. Default and Slide.
+ Default is the common page like the current one you are reading. Slide is a page that use the full screen to display its markdown content as a reveals.js presentation. HomePage is a special content that will be displayed as home page content.  To tell Hugo-theme-docdock to consider a page as a slide, just add a type=&quot;slide&quot;in then frontmatter of your file.</p>
 				
 			
 		
@@ -1583,7 +1586,10 @@
 
 			
 				
-<p></p>
+<p>With Hugo, pages are the core of your site. Organize your site like any other Hugo project. Magic occurs with the nested sections implemention done in v0.22 of hugo (congrats @bep).
+With docdock, Each content page composes the menu, they shape the structure of your website.
+To link pages to each other, place them in a folders hierarchy
+content ├── level-one │ ├── level-two │ │ ├── level-three │ │ │ ├── level-four │ │ │ │ ├── _index.</p>
 				
 			
 		
@@ -1641,7 +1647,9 @@
 
 			
 				
-<p></p>
+<p>Nothing to do on your side. :-)
+Docdock theme uses the last improvement available in hugo version 20+ to generate a json index file ready to be consumed by lunr.js javascript search engine.
+hugo generate lunrjs index.json at the root of public folder. When you build the site with hugo server, hugo generates it internally and of course it don&rsquo;t show up in the filesystem </p>
 				
 			
 		
