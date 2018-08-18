@@ -162,7 +162,8 @@ Special syntax (in html comment) is available for adding attributes to Markdown 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://sheenp333.github.io/docdock/development/ruby/</guid>
-      <description>CentOS6 Install Ruby (and Rails)
+      <description>Introduction   TBA
+     Installation   CentOS6 Install Ruby (and Rails)
    sudo yum install ruby sudo yum install gcc g++ make automake autoconf curl-devel openssl-devel zlib-devel httpd-devel apr-devel apr-util-devel sqlite-devel sudo yum install ruby-rdoc ruby-devel sudo yum install rubygems sudo gem update sudo gem update --system sudo gem install rails -V # possibly slow so -V will show steps sudo gem install asciidoctor # for asciidoctor     Install Gems with no network</description>
     </item>
     
