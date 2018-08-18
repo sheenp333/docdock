@@ -18,7 +18,7 @@
 	"title": "Getting started",
 	"tags": [],
 	"description": "",
-	"content": " Requirements Download Hugo binary for your OS (Windows, Linux, Mac) : it’s that simple\n Installation  \n Configuration  \n Markdown Syntax  The following resources are good introductions to various Markdown syntaxes: Simple Cheatsheet Markdown Cheatsheet Mmark syntax Emoji Cheatsheet  Create Page  \n Content Organisation  \n Shortcodes  \n About the Search Engine  \n "
+	"content": " Requirements Download Hugo binary for your OS (Windows, Linux, Mac) : it’s that simple\n Installation  HUGO v0.25 minimum required to use this theme The following steps are here to help you initialize your new website. If you don’t know Hugo at all, we strongly suggest you to train by following this great documentation for beginners.  Configuration  \n Markdown Syntax  \n Create Page  \n Content Organisation  \n Shortcodes  \n About the Search Engine  \n "
 },
 {
 	"uri": "http://sheenp333.github.io/docdock/getting-start/installation/",
@@ -158,7 +158,7 @@
 	"title": "",
 	"tags": [],
 	"description": "",
-	"content": "Introduction   TBA\n     Installation   CentOS6 Install Ruby (and Rails)\n   sudo yum install ruby sudo yum install gcc g++ make automake autoconf curl-devel openssl-devel zlib-devel httpd-devel apr-devel apr-util-devel sqlite-devel sudo yum install ruby-rdoc ruby-devel sudo yum install rubygems sudo gem update sudo gem update --system sudo gem install rails -V # possibly slow so -V will show steps sudo gem install asciidoctor # for asciidoctor     Install Gems with no network\n  Gem cache - gem environment - INSTALLATION DIRECTORY and GEM PATHS cache directories\n      cd download/directory gem install --force --local *.gem     Install manually using downloads Rose Hosting\n     "
+	"content": "Introduction   TBA == Installation\n  CentOS6 Install Ruby (and Rails)\n   sudo yum install ruby sudo yum install gcc g++ make automake autoconf curl-devel openssl-devel zlib-devel httpd-devel apr-devel apr-util-devel sqlite-devel sudo yum install ruby-rdoc ruby-devel sudo yum install rubygems sudo gem update sudo gem update --system sudo gem install rails -V # possibly slow so -V will show steps sudo gem install asciidoctor # for asciidoctor     Install Gems with no network\n  Gem cache - gem environment - INSTALLATION DIRECTORY and GEM PATHS cache directories\n      cd download/directory gem install --force --local *.gem     Install manually using downloads Rose Hosting\n     "
 },
 {
 	"uri": "http://sheenp333.github.io/docdock/tags/aop/",
