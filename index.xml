@@ -117,6 +117,17 @@ Special syntax (in html comment) is available for adding attributes to Markdown 
     </item>
     
     <item>
+      <title>AsciiDoc Sample</title>
+      <link>http://sheenp333.github.io/docdock/development/sample/</link>
+      <pubDate>Wed, 14 Dec 2016 12:33:44 +0100</pubDate>
+      
+      <guid>http://sheenp333.github.io/docdock/development/sample/</guid>
+      <description>Table of Contents First level heading Second level heading   First level heading First level heading   Content entered directly below the header but before the first section heading is called the preamble.
+     Be good to your mother       First level heading This is a paragraph with a bold word and an italicized word.
+  Figure 1. Image caption  This is another paragraph.</description>
+    </item>
+    
+    <item>
       <title>Pat Sheen test</title>
       <link>http://sheenp333.github.io/docdock/development/pgstest/</link>
       <pubDate>Wed, 14 Dec 2016 12:33:44 +0100</pubDate>
@@ -152,8 +163,8 @@ Special syntax (in html comment) is available for adding attributes to Markdown 
       <pubDate>Wed, 14 Dec 2016 12:33:44 +0100</pubDate>
       
       <guid>http://sheenp333.github.io/docdock/development/ruby/</guid>
-      <description>Introduction   TBA == Installation
-  CentOS6 Install Ruby (and Rails)
+      <description>Introduction   TBA
+     Installation   CentOS6 Install Ruby (and Rails)
    sudo yum install ruby sudo yum install gcc g++ make automake autoconf curl-devel openssl-devel zlib-devel httpd-devel apr-devel apr-util-devel sqlite-devel sudo yum install ruby-rdoc ruby-devel sudo yum install rubygems sudo gem update sudo gem update --system sudo gem install rails -V # possibly slow so -V will show steps sudo gem install asciidoctor # for asciidoctor     Install Gems with no network</description>
     </item>
     
@@ -165,17 +176,6 @@ Special syntax (in html comment) is available for adding attributes to Markdown 
       <guid>http://sheenp333.github.io/docdock/post/method-validation-with-jsr303-and-aspectj/</guid>
       <description>Hibernate Validator since version 4.2 supports method validation. For instance consider the following Java code:
  package de.mirkosertic.aspectj; import javax.validation.constraints.NotNull; public class Example { public void doNothing(String aValue) { } public String getString(String aValue) { return aValue; } public @NotNull String getNullString(String aValue) { return aValue; } public void doNothingSingleNotNull(@NotNull String aValue) { } public void doNothingMiddleNotNull(String aStart,@NotNull String aValue, String aEnd) { } public void doNothingEndNotNull(String aStart,String aValue, @NotNull String aEnd) { } }   Wouldn&amp;#8217;t it be cool to validate the method pre- and post conditions without coding too much?</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://sheenp333.github.io/docdock/development/sample/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://sheenp333.github.io/docdock/development/sample/</guid>
-      <description>Table of Contents First level heading Second level heading   First level heading First level heading   Content entered directly below the header but before the first section heading is called the preamble.
-     Be good to your mother       First level heading This is a paragraph with a bold word and an italicized word.
-  Figure 1. Image caption  This is another paragraph.</description>
     </item>
     
     <item>
