@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="generator" content="Hugo 0.37.1" />
-    <meta name="description" content="Allow you to highlight information or put it in a box.">
+    <meta name="description" content="">
 
 
-    <title>panel :: CompInfo</title>
+    <title>Development :: CompInfo</title>
     <link rel="shortcut icon" href="/docdock/images/favicon.png" type="image/x-icon" />
     <link href="/docdock/css/nucleus.css" rel="stylesheet">
     <link href="/docdock/css/font-awesome.min.css" rel="stylesheet">
@@ -40,7 +40,7 @@
 </script>
 
   </head>
-  <body class="" data-url="/docdock/getting-start/shortcodes/panel/">
+  <body class="" data-url="/docdock/tags/development/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -190,7 +190,7 @@
   
     
     <li data-nav-id="/docdock/getting-start/" class="dd-item 
-        parent
+        
         
         parent
         ">
@@ -540,7 +540,7 @@
   
     
     <li data-nav-id="/docdock/getting-start/shortcodes/" class="dd-item 
-        parent
+        
         
         
         ">
@@ -551,7 +551,7 @@
         
 
           
-            <i class="fa fa-angle-down fa-lg category-icon"></i>
+            <i class="fa fa-angle-right fa-lg category-icon"></i>
           
 
         
@@ -1141,7 +1141,7 @@
   
     
       <li data-nav-id="/docdock/getting-start/shortcodes/panel/" class="dd-item
-     active
+     
       ">
         <a href="/docdock/getting-start/shortcodes/panel/">
         <span>panel</span> 
@@ -1225,7 +1225,7 @@
     
     <li data-nav-id="/docdock/post/" class="dd-item 
         
-        
+        active
         
         ">
       <a href="/docdock/post/">
@@ -1384,17 +1384,6 @@
         
           <div id="top-bar">
             
-              
-              
-              
-            <div id="top-github-link">
-              <a class="github-link" href="https://github.com/sheenp333/docdock/edit/master/exampleSite/content/getting-start/shortcodes/panel.md" target="blank">
-                <i class="fa fa-code-fork"></i>
-                Edit page
-              </a>
-            </div>
-              
-            
 
             <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
                 <span id="sidebar-toggle-span">
@@ -1406,40 +1395,14 @@
                 <span class="links">
                 
 
-
-
-
-
-
-
-
-
-
- <a href='/docdock/'>CompInfo</a> > <a href='/docdock/getting-start/'>Getting started</a> > <a href='/docdock/getting-start/shortcodes/'>Shortcodes</a> > panel
-
- 
-
- 
-
- 
+ Development
 
    
                 </span>
             </div>
             <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#usage">Usage</a></li>
-<li><a href="#basic-example">Basic example</a></li>
-<li><a href="#panel-with-heading">Panel with heading</a></li>
-<li><a href="#panel-with-footer">Panel with footer</a></li>
-<li><a href="#themes">Themes</a></li>
-</ul></li>
-</ul>
-</nav>
+
     </div>
 </div>
 
@@ -1448,7 +1411,7 @@
         
         <div id="body-inner">
           
-            <h1>panel</h1>
+            <h1>Development</h1>
           
 
 
@@ -1456,146 +1419,62 @@
 
 
 
-<div class="panel panel-success">
-	<div class="panel-heading">The panel shortcode</div>
-	<div class="panel-body">Allow you to highlight information or put it in a box. They create a colored box surrounding your text</div>
-	
-</div>
-
-
-<h2 id="usage">Usage</h2>
-
-<table>
-<thead>
-<tr>
-<th align="left">Parameter</th>
-<th align="left">Default</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td align="left">header</td>
-<td align="left">none</td>
-<td align="left">The title of the panel. If specified, this title will be displayed in its own header row.</td>
-</tr>
-
-<tr>
-<td align="left">footer</td>
-<td align="left">none</td>
-<td align="left">the footer of the panel. If specified, this text will be displayed in its own row</td>
-</tr>
-
-<tr>
-<td align="left">theme</td>
-<td align="left"><code>primary</code></td>
-<td align="left"><code>default</code>,<code>primary</code>,<code>info</code>,<code>success</code>,<code>warning</code>,<code>danger</code></td>
-</tr>
-</tbody>
-</table>
-
-<h2 id="basic-example">Basic example</h2>
-
-<p>By default :</p>
-
-<pre><code>{{% panel %}}this is a panel text{{% /panel %}}
-</code></pre>
-
-<div class="panel panel-primary">
-	
-	<div class="panel-body">this is a panel text</div>
-	
-</div>
-
-
-<h2 id="panel-with-heading">Panel with heading</h2>
-
-<p>Easily add a heading container to your panel with <code>header</code> parameter. You may apply any theme.</p>
-
-<pre><code>{{% panel theme=&quot;danger&quot; header=&quot;panel title&quot; %}}this is a panel text{{% /panel %}}
-</code></pre>
-
-<div class="panel panel-danger">
-	<div class="panel-heading">panel title</div>
-	<div class="panel-body">this is a panel text</div>
-	
-</div>
-
-
-<pre><code>{{% panel theme=&quot;success&quot; header=&quot;panel title&quot; %}}this is a panel text{{% /panel %}}
-</code></pre>
-
-<div class="panel panel-success">
-	<div class="panel-heading">panel title</div>
-	<div class="panel-body">this is a panel text</div>
-	
-</div>
-
-
-<h2 id="panel-with-footer">Panel with footer</h2>
-
-<p>Wrap a secondary text in footer.</p>
-
-<pre><code>{{% panel footer=&quot;panel footer&quot; %}}Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.{{% /panel %}}
-</code></pre>
-
-<div class="panel panel-primary">
-	
-	<div class="panel-body"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-	<div class="panel-footer">panel footer</div>
-</div>
-
-
-<h2 id="themes">Themes</h2>
-
-<p><div class="panel panel-success">
-	<div class="panel-heading">Success theme</div>
-	<div class="panel-body">this is a panel text</div>
-	
-</div>
-
-<div class="panel panel-default">
-	<div class="panel-heading">default theme</div>
-	<div class="panel-body">this is a panel text</div>
-	
-</div>
-
-<div class="panel panel-primary">
-	<div class="panel-heading">primary theme</div>
-	<div class="panel-body">this is a panel text</div>
-	
-</div>
-
-<div class="panel panel-info">
-	<div class="panel-heading">info theme</div>
-	<div class="panel-body">this is a panel text</div>
-	
-</div>
-
-<div class="panel panel-warning">
-	<div class="panel-heading">warning theme</div>
-	<div class="panel-body">this is a panel text</div>
-	
-</div>
-
-<div class="panel panel-danger">
-	<div class="panel-heading">danger theme</div>
-	<div class="panel-body">this is a panel text</div>
-	
-</div>
-</p>
-
-
 <footer class=" footline" >
 	
 </footer>
+
+
+
+	
+
+	<div class="extra-pagination inner">
+	<nav class="pagination" role="navigation">
+	
+	<span class="page-number">Page 1 on 1</span>
+	
+</nav>
+
+	</div>
+
+	
+	   <article class="post development">
+    <header class="post-header">
+        <h2 class="post-title"><a href="/docdock/development/ruby/">Ruby</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>Introduction   TBA == Installation
+  CentOS6 Install Ruby (and Rails)
+   sudo yum install ruby sudo yum install gcc g++ make automake autoconf curl-devel openssl-devel zlib-devel httpd-devel apr-devel apr-util-devel sqlite-devel sudo yum install ruby-rdoc ruby-devel sudo yum install rubygems sudo gem update sudo gem update --system sudo gem install rails -V # possibly slow so -V will show steps sudo gem install asciidoctor # for asciidoctor     Install Gems with no network <a class="read-more" href="/docdock/development/ruby/">&raquo;</a></p>
+    </section>
+    <footer class=" footline" >
+         
+        
+
+        
+          
+            
+                <a class="label label-default" href="http://sheenp333.github.io/docdock/tags/testing/">Testing</a>
+            
+                <a class="label label-default" href="http://sheenp333.github.io/docdock/tags/development/">Development</a>
+            
+        
+
+    </footer>
+</article>
+
+
+
+
+	
+
+	<div style="margin-bottom:2rem"></div>
+
+	<nav class="pagination" role="navigation">
+	
+	<span class="page-number">Page 1 on 1</span>
+	
+</nav>
+
 
 
 
@@ -1698,7 +1577,6 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             
                 
                     
-                    
                 
                 
 
@@ -1713,9 +1591,6 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -1916,7 +1791,6 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             
                 
                     
-                    
                 
                 
 
@@ -1931,9 +1805,6 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -2270,7 +2141,6 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             
                 
                     
-                    
                 
                 
 
@@ -2278,28 +2148,6 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     
                     
 
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
             
         
@@ -2336,6 +2184,25 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     
 
                     
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
                         
             
             
@@ -2394,10 +2261,8 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 
         
-            <a class="nav nav-prev" href="/docdock/getting-start/shortcodes/notice/" title="notice"> <i class="fa fa-chevron-left"></i></a>
         
-        
-            <a class="nav nav-next" href="/docdock/getting-start/shortcodes/revealjs/" title="revealjs" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/docdock/development/" title="Development" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -2424,4 +2289,3 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
   </body>
 </html>
-
