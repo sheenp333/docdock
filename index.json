@@ -11,14 +11,14 @@
 	"title": "Development",
 	"tags": [],
 	"description": "",
-	"content": " Requirements Download Hugo binary for your OS (Windows, Linux, Mac) : it’s that simple\n AsciiDoc Sample  \n Pat Sheen test  \n Ruby  \n "
+	"content": " Requirements Download Hugo binary for your OS (Windows, Linux, Mac) : it’s that simple\n AsciiDoc Sample  \n Pat Sheen test  \n Ruby  \n Some Diagrams  \n "
 },
 {
 	"uri": "http://sheenp333.github.io/docdock/getting-start/",
 	"title": "Getting started",
 	"tags": [],
 	"description": "",
-	"content": " Requirements Download Hugo binary for your OS (Windows, Linux, Mac) : it’s that simple\n Installation  HUGO v0.25 minimum required to use this theme The following steps are here to help you initialize your new website. If you don’t know Hugo at all, we strongly suggest you to train by following this great documentation for beginners.  Configuration  \n Markdown Syntax  The following resources are good introductions to various Markdown syntaxes: Simple Cheatsheet Markdown Cheatsheet Mmark syntax Emoji Cheatsheet  Create Page  Hugo-theme-docdock defines two types of pages. Default and Slide. Default is the common page like the current one you are reading. Slide is a page that use the full screen to display its markdown content as a reveals.js presentation. HomePage is a special content that will be displayed as home page content. To tell Hugo-theme-docdock to consider a page as a slide, just add a type=\u0026quot;slide\u0026quot;in then frontmatter of your file.\n Content Organisation  \n Shortcodes  \n About the Search Engine  \n "
+	"content": " Requirements Download Hugo binary for your OS (Windows, Linux, Mac) : it’s that simple\n Installation  HUGO v0.25 minimum required to use this theme The following steps are here to help you initialize your new website. If you don’t know Hugo at all, we strongly suggest you to train by following this great documentation for beginners.  Configuration  \n Markdown Syntax  The following resources are good introductions to various Markdown syntaxes: Simple Cheatsheet Markdown Cheatsheet Mmark syntax Emoji Cheatsheet  Create Page  \n Content Organisation  \n Shortcodes  \n About the Search Engine  \n "
 },
 {
 	"uri": "http://sheenp333.github.io/docdock/getting-start/installation/",
@@ -161,6 +161,13 @@
 	"content": "Introduction   TBA\n     Installation   CentOS6 Install Ruby (and Rails)\n   sudo yum install ruby sudo yum install gcc g++ make automake autoconf curl-devel openssl-devel zlib-devel httpd-devel apr-devel apr-util-devel sqlite-devel sudo yum install ruby-rdoc ruby-devel sudo yum install rubygems sudo gem update sudo gem update --system sudo gem install rails -V # possibly slow so -V will show steps sudo gem install asciidoctor # for asciidoctor     Install Gems with no network\n  Gem cache - gem environment - INSTALLATION DIRECTORY and GEM PATHS cache directories\n      cd download/directory gem install --force --local *.gem     Install manually using downloads Rose Hosting\n     "
 },
 {
+	"uri": "http://sheenp333.github.io/docdock/development/diagrams/",
+	"title": "Some Diagrams",
+	"tags": ["Testing", "Diagrams"],
+	"description": "",
+	"content": "      Summary This is the summary.\n   "
+},
+{
 	"uri": "http://sheenp333.github.io/docdock/post/method-validation-with-jsr303-and-aspectj/",
 	"title": "Method validation with JSR303 and AspectJ",
 	"tags": ["AOP", "Interesting"],
@@ -198,6 +205,13 @@
 {
 	"uri": "http://sheenp333.github.io/docdock/tags/development/",
 	"title": "Development",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://sheenp333.github.io/docdock/tags/diagrams/",
+	"title": "Diagrams",
 	"tags": [],
 	"description": "",
 	"content": ""

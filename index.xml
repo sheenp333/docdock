@@ -169,6 +169,16 @@ Special syntax (in html comment) is available for adding attributes to Markdown 
     </item>
     
     <item>
+      <title>Some Diagrams</title>
+      <link>http://sheenp333.github.io/docdock/development/diagrams/</link>
+      <pubDate>Wed, 14 Dec 2016 12:33:44 +0100</pubDate>
+      
+      <guid>http://sheenp333.github.io/docdock/development/diagrams/</guid>
+      <description>      Summary This is the summary.
+   </description>
+    </item>
+    
+    <item>
       <title>Method validation with JSR303 and AspectJ</title>
       <link>http://sheenp333.github.io/docdock/post/method-validation-with-jsr303-and-aspectj/</link>
       <pubDate>Wed, 26 Jun 2013 10:29:19 +0200</pubDate>
