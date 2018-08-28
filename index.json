@@ -165,7 +165,7 @@
 	"title": "Some Diagrams",
 	"tags": ["Testing", "Diagrams"],
 	"description": "",
-	"content": "      Summary This is the summary.\n   "
+	"content": "        Summary This is the summary.\n   "
 },
 {
 	"uri": "http://sheenp333.github.io/docdock/post/method-validation-with-jsr303-and-aspectj/",

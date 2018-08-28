@@ -174,7 +174,7 @@ Special syntax (in html comment) is available for adding attributes to Markdown 
       <pubDate>Wed, 14 Dec 2016 12:33:44 +0100</pubDate>
       
       <guid>http://sheenp333.github.io/docdock/development/diagrams/</guid>
-      <description>      Summary This is the summary.
+      <description>        Summary This is the summary.
    </description>
     </item>
     
